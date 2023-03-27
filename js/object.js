@@ -10,3 +10,8 @@ personalData.age = 37;
 personalData.address = "東京都";
 console.log(personalData.age);
 console.log(personalData.address);
+
+// オブジェクトの値を出力する
+console.log(personalData);
+
+personalData = 3;

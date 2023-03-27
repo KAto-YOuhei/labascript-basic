@@ -30,3 +30,17 @@ const double = (num) => {
 };
 
 console.log(double(30));
+
+//定数宣言をする
+const userName = "侍太郎";
+
+//定数の値を出力する
+console.log(userName);
+//関数の中で定数を使う
+const useVariable = () => {
+  console.log(userName);
+};
+
+//関数を呼び出す
+useVariable();
+
