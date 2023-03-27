@@ -43,4 +43,3 @@ const useVariable = () => {
 
 //関数を呼び出す
 useVariable();
-
