@@ -6,6 +6,7 @@ let typed = "";
 const untypedfield = document.getElementById("untyped");
 const typedfield = document.getElementById("typed");
 const wrap = document.getElementById("wrap");
+const start = document.getElementById("start");
 
 //複数のテキストを格納する配列
 const textList = [
@@ -88,3 +89,17 @@ const timer = () => {};
 
 //キーボードのイベント処理
 document.addEventListener("keypress", keyPress);
+
+//ゲームスタート時の処理
+start.addEventListener("click", () => {
+  //ランダムなテキストを表示する
+  createText();
+
+  //「スタート」ボタンを非表示にする
+  start.style.display = "none";
+
+  //キーボードのイベント処理
+  document.addEventListener("keypress", keyPress);
+});
+
+untypedfield.textContent = "スタートボタンで開始";
